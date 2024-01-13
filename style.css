@@ -84,6 +84,7 @@ img {
 .search {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 5px;
     justify-items: center;
     align-content: center;
     border: solid green 2px;
@@ -92,6 +93,11 @@ img {
 #magnify {
     height: 30px;
     width: 30px;
+    justify-self: right;
+}
+
+#name-search {
+    width: 400px;
 }
 
 .right-name {
@@ -105,7 +111,13 @@ img {
     display: grid;
     justify-items: center;
     align-content: center;
+    grid-template-columns: 1fr 2fr;
     border: solid green 2px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .menu {
@@ -120,6 +132,21 @@ img {
     grid-template-rows: 1fr;
     justify-items: center;
     border: solid blue 1px;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: blue;
 }
 
 .main-content {
