@@ -13,7 +13,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 5;
     display: grid;
-    grid-template-rows: .5fr 2fr 2fr;
+    grid-template-rows: .5fr 1fr 1fr;
     justify-items: center;
     border: solid red 2px;
     margin-bottom: 0;
@@ -28,15 +28,17 @@
 .sidebar li {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
     margin-left: 10px;
     margin-right: 10px;
-    align-content: center;
+    align-content: space-between;
+    border: solid orange 2px;
 }
 
 img {
-    width: 60px;
+    width: 40px;
+    height: 40px;
     border: solid red 2px;
+    justify-self: center;
 }
 
 .logo {
@@ -49,10 +51,19 @@ img {
 }
 
 .sidebar div p {
-    border: solid 2px orange;
+    border: solid 2px green;
     display: grid;
     align-content: center;
-    font-size: 34px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.side-menu-bottom {
+    border: solid purple 1px;
+    display: grid;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
 }
 
 .header {
@@ -72,9 +83,15 @@ img {
 
 .search {
     display: grid;
+    grid-template-columns: 1fr 2fr;
     justify-items: center;
     align-content: center;
     border: solid green 2px;
+}
+
+#magnify {
+    height: 30px;
+    width: 30px;
 }
 
 .right-name {
