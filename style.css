@@ -13,7 +13,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 5;
     display: grid;
-    grid-template-rows: .3fr .8fr .9fr;
+    grid-template-rows: .2fr .6fr .9fr;
     justify-items: center;
     margin-bottom: 0;
     background-color: #3D9CEA;
@@ -119,6 +119,8 @@ img {
 .menu {
     display: grid;
     align-content: center;
+    justify-items: center;
+    gap: 30px;
 }
 
 .menu ul {
@@ -126,6 +128,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     justify-items: center;
+    gap: 15px;
 }
 
 .menu-item {
